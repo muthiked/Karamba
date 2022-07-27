@@ -29,7 +29,7 @@ public class Streamers {
 //		Object sq1 = words.stream().filter(s->s.startsWith("R")).collect(Collectors.toList());
 //		System.out.println(sq1);
 		String[] names = { "Martin", "David", "Joyce", "Jackson", "Moses", "Jane" };
-		List<String> ls = new ArrayList();
+		List<String> ls = new ArrayList<String>();
 		ls.add("Car");
 		ls.add("Truck");
 		ls.add("Bus");
