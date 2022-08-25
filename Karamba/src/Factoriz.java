@@ -11,7 +11,18 @@ public class Factoriz {
 	}
 	
 	private static int myFacto (int n, int r) {
-		return (int) Math.random();
+		int x = fact(n)/fact(n-r);
+		return x;
+	}
+	
+	private static int fact (int n) {
+		int i = 1;
+		int j = 1;
+		while(j <= n) {
+			i = i*j;
+			j++;
+		}
+		return j;
 	}
 
 }

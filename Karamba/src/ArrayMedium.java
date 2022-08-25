@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.stream.Stream;
 
 public class ArrayMedium {
 
@@ -40,7 +39,6 @@ public class ArrayMedium {
 		
 		if (maxLeftX <= minRightY && maxLeftY <= minRightX) {
 			if((x + y) % 2 == 0 ) {
-				System.out.println(maxLeftX +" "+maxLeftY+" "+minRightX+" "+minRightY );
 				return ((double) Math.max(maxLeftX, maxLeftY) + Math.min(minRightX, minRightY))/2;
 
 			}
@@ -52,8 +50,15 @@ public class ArrayMedium {
 		} else {
 			low = xPartition + 1;
 		}
+		
 		}
 		throw new IllegalArgumentException();
+	}
+	
+	private static double mine2Median(int[] inp1, int[] inp2) {
+		double x = 0 ;
+		
+		return  x;
 	}
 
 	private static double findMedianSortedArrays(int input1[], int input2[]) {
@@ -83,8 +88,7 @@ public class ArrayMedium {
                 // Now get max of left elements and min of right elements to get the median in case of even length combined array size
                 // or get max of left for odd length combined array size.
                 if ((x + y) % 2 == 0) {
-    				System.out.println(maxLeftX +" "+maxLeftY+" "+minRightX+" "+minRightY );
-                    return ((double)Math.max(maxLeftX, maxLeftY) + Math.min(minRightX, minRightY))/2;
+    				return ((double)Math.max(maxLeftX, maxLeftY) + Math.min(minRightX, minRightY))/2;
                 } else {
                     return (double)Math.max(maxLeftX, maxLeftY);
                 }

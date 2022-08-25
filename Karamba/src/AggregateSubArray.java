@@ -9,7 +9,7 @@ public class AggregateSubArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] b = {-1, 2,11, 10, 6, -9,-8, 4,6,25, 9};
+		int[] b = {-1, 267,11, 10, 6, -9,-8, 4,6,25, 9};
 		System.out.println(Arrays.toString(check(b)));
 	}
 	private static int[] check(int[] anArr) {
@@ -19,7 +19,6 @@ public class AggregateSubArray {
 		for(int i =1; i< anArr.length; i++) {
 			simpleSum = anArr[i] + anArr[i-1];
 			if(simpleSum > highest) {
-				System.out.println(highest);
 				temp.clear();
 				highest = simpleSum;
 				temp.add(anArr[i-1]);

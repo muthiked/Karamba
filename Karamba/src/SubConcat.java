@@ -11,7 +11,7 @@ public class SubConcat {
 		// TODO Auto-generated method stub
 		String[] s = {"bar","foo","the"};
 		List<String> combos = new ArrayList<>();
-		List<String> k = Factorial.helper(s, 0, combos);
+		List<String> k = BreakDown.helper(s, 0, combos);
 		String[] j = k.stream().toArray(String[]:: new);
 		List<Integer> occurences = findSubstring("barfoofoobarthefoobarman", j);
 		System.out.println(occurences);

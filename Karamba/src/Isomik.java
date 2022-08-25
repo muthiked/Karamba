@@ -33,12 +33,11 @@ public class Isomik {
 					return false;
 				}
 			}
-				else {
-					if (isoSet.contains(w)) {
-						return false;
-					}
-
+			else {
+				if (isoSet.contains(w)) {
+					return false;
 				}
+}
 				isoMap.put(v, w);
 				isoSet.add(w);
 			}
